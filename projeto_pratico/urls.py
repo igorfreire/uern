@@ -1,6 +1,7 @@
 from django.urls import path
-from app import views
+from app.views import ola, list_pizzas
 
 urlpatterns = [
-    path('pizzas/', views.list_pizzas, name='list_pizzas')
+    path('', ola, name='ola'),
+    path('pizzas/', list_pizzas, name='list_pizzas')
 ]

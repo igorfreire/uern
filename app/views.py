@@ -1,5 +1,8 @@
 from django.http import JsonResponse
 
+def ola(request):
+    return JsonResponse("Olá, bem vindo a minha API - UERN", safe=False)
+
 def list_pizzas(request):
     pizzas = [
         {'id':1, 'name': 'Margherita', 'ingredientes': ['Tomate', 'Mussarela', 'Manjericão']},
